@@ -1,0 +1,67 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+\usepackage{caption}
+                
+\usepackage[backend=biber,hyperref=false,citestyle=authoryear,bibstyle=authoryear]{biblatex}
+                
+\bibliography{bibliography}
+            
+\usepackage{graphicx}
+                
+\usepackage{calc}
+                
+\newlength{\imgwidth}
+                
+\newcommand\scaledgraphics[2]{%
+                
+\settowidth{\imgwidth}{\includegraphics{#1}}%
+                
+\setlength{\imgwidth}{\minof{\imgwidth}{#2\textwidth}}%
+                
+\includegraphics[width=\imgwidth,height=\textheight,keepaspectratio]{#1}%
+                
+}
+            
+\begin{document}
+
+\title{Chapter 1}
+
+\maketitle
+
+
+\subsection{Text, images, references, and footnotes}\label{H5353869}
+
+
+
+\subsubsection{Image}\label{H6448135}
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus placerat risus, ut sagittis magna. Aliquam vehicula lacinia nisi, rutrum condimentum lacus mattis tincidunt. Quisque ullamcorper orci quis sem tempus suscipit. Etiam et semper eros, a eleifend risus. Vestibulum convallis orci purus, et feugiat ipsum facilisis rutrum. Nullam justo lorem, fermentum ultrices lorem sed, faucibus imperdiet est. Nam ut porta purus. Curabitur vel felis placerat, porttitor nibh quis, facilisis mi. Morbi in fermentum nisi, eget iaculis nisl. Praesent posuere non lectus nec vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean blandit lectus et nisl eleifend, ornare ornare sem efficitur. Nullam quis nisl at risus luctus imperdiet. Maecenas aliquam est a nulla fermentum convallis.
+
+\begin{figure}
+\scaledgraphics{fb7c0a1e-b728-4885-adbb-1cae4348efa6.jpg}{1}
+\caption*{Figure 1: \href{https://en.wikipedia.org/wiki/March_for_Science}{March for Science} in San Francisco, California. 2017. See: \href{https://commons.wikimedia.org/wiki/File:Citation_needed_-_March_for_Science.jpg}{https://commons.wikimedia.org/wiki/File:Citation\_needed\_-\_March\_for\_Science.jpg}}\label{F64353661}
+\end{figure}
+
+
+\subsubsection{References}\label{H153323}
+
+
+
+Proin semper interdum rutrum. \autocite{https://doi.org/10.5281/zenodo.610760,https://doi.org/10.5281/zenodo.610760} Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent convallis hendrerit semper. Fusce consectetur elit non ipsum egestas, sed bibendum tellus euismod. \autocite{technische_universitat_munchen_fidus_nodate} Ut viverra massa vel magna tempor imperdiet id et enim. Integer rhoncus eleifend facilisis. Nunc laoreet sodales mauris, sit amet fermentum ex tempus egestas. Fusce est est, vestibulum et commodo vel, malesuada id dui. \autocite{https://doi.org/10.5281/zenodo.19331}  Aliquam erat volutpat. Fusce mattis id nunc eget pharetra. Aenean vitae viverra dolor. Donec lacinia eget ante quis facilisis. Quisque justo lacus, dignissim in erat vel, eleifend semper quam. Etiam pretium nisl sit amet est auctor, in euismod ipsum volutpat. \autocite{https://doi.org/10.5281/zenodo.19731}
+
+
+\subsubsection{Footnotes}\label{H5724220}
+
+
+
+Aliquam condimentum velit sed vestibulum iaculis.\footnote{Worthington, Simon. ‘Simon Worthington › Hybrid Publishing Lab Notepad’. Blog. \emph{Hybrid Publishing Lab Notepad} (blog), 2013.} Sed neque nunc, sagittis eu semper eget, vehicula a orci. Mauris ultricies diam leo, id scelerisque ante facilisis vel. Curabitur ut ultricies eros.\footnote{Worthington, Simon. \emph{Book to the Future - a Book Liberation Manifesto}. London: OpenMute Press, 2015.} Nam diam sapien, gravida eget cursus non, consequat a elit. Fusce non pulvinar magna, vel dapibus felis. Aliquam sem nisi, efficitur ut maximus vitae, condimentum in lorem.\footnote{Worthington, Simon. ‘Collaborative Libraries - Read Me’. Github Repository. Collaborative Libraries, 2015. \href{https://github.com/consortium/Collaborative-Libraries}{https://github.com/consortium/Collaborative-Libraries}.} 
+
+
+Aliquam erat volutpat. Maecenas iaculis lorem nec elit ornare interdum. Integer faucibus a augue a ullamcorper. Aenean non ligula id nulla faucibus rutrum ut et eros. Aliquam a tempus ex. Vivamus sit amet sapien gravida, pretium quam nec, scelerisque tellus. Donec malesuada augue lorem, quis hendrerit risus luctus vel. Aenean sollicitudin tortor vel ex hendrerit, ac aliquam ipsum aliquet. Sed id velit nec magna fermentum pellentesque. Integer lorem arcu, malesuada eu iaculis id, varius eu tortor. Praesent orci orci, varius efficitur lacinia id, ultrices non diam. Etiam congue, diam id bibendum tincidunt, ante elit lobortis nibh, et bibendum enim velit eu urna. Nam vitae turpis sit amet mauris sagittis mattis. Nullam mattis pulvinar posuere. Quisque tincidunt lacus nibh, id rutrum est tempor a.
+
+
+\printbibliography[title={Bibliography}]
+\end{document}
