@@ -2,13 +2,13 @@
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="fidus" xml:lang="en-GB" prefix="cc: http://creativecommons.org/ns#">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="fidus">116</dc:identifier>
-    <dc:title>Reference Publication and Template v1.0 OCT 22</dc:title>
+    <dc:title>A Manual</dc:title>
     <dc:creator>
       The Author
     </dc:creator>
     <dc:language>en-GB</dc:language>
-    <meta property="dcterms:modified">2022-10-03T10:04:23Z</meta>
-    <dc:date>2022-10-03</dc:date>
+    <meta property="dcterms:modified">2022-10-04T09:42:27Z</meta>
+    <dc:date>2022-10-04</dc:date>
     <dc:rights>Creative Commons Share-Alike 4.0</dc:rights>
     <dc:publisher>The Publisher</dc:publisher>
     <dc:subject>book</dc:subject>
