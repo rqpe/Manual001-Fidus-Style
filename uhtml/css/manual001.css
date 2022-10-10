@@ -1046,10 +1046,20 @@ body {
   counter-increment : none;
     }
 
-/* Docsify */
+  /* Docsify */
   .markdown-section .article-body h1, .markdown-section .article-body h2, .markdown-section .article-body h3, .markdown-section .article-body h4, .markdown-section .article-body h5 {
       margin-left:0em!important;
   }
+  .markdown-section h1, .content .markdown-section .article-title {
+    margin-left:0em!important;
+  }
+  .markdown-section h1::before, .content .markdown-section .article-title::before {
+    font-size: var(--heading-h1-font-size);
+  }
+  .content .markdown-section li p {
+    display: inline!important;
+}
+
 
 @media print {
   a {
