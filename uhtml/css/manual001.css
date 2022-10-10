@@ -1046,8 +1046,14 @@ body {
   counter-increment : none;
     }
 
-  /* Docsify */
-  .markdown-section .article-body h1, .markdown-section .article-body h2, .markdown-section .article-body h3, .markdown-section .article-body h4, .markdown-section .article-body h5, .markdown-section .article-bibliography-header, .markdown-section .csl-bib-body,   {
+/* Docsify */
+  .markdown-section .article-body h1, 
+  .markdown-section .article-body h2, 
+  .markdown-section .article-body h3, 
+  .markdown-section .article-body h4, 
+  .markdown-section .article-body h5, 
+  .markdown-section .article-bibliography-header, 
+  .markdown-section .csl-bib-body {
       margin-left:0em!important;
   }
   .markdown-section h1, .content .markdown-section .article-title {
