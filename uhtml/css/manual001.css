@@ -4,26 +4,51 @@
   margin-bottom: 30mm;
 }
 
-@page :first {
+ @page :first {
   size: 210mm 297mm;
-  display: flex;
-  margin-top: 300mm;
-  color: rgb(0, 0, 145); 
-  page-break-after: always;
-  @bottom-left { content: normal; }
-  @bottom-center { content: normal; }
-	@bottom-right { content: normal; }
-	@top-left { content: normal; }
-  @top-right { content: normal;}
-  @top-center {
-    content: env(doc-title);
+  margin-left: 20mm;
+  margin-right: 15mm;
+  @top-left {
+    content: "Blat " counter(page) "/" counter(pages) "\a" env(doc-title);
+    white-space: pre;
     font-family: Arial, sans-serif;
-    font-weight: 600;
-   font-size: 38pt; 
-    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.58rem; /* 6.96pt */
     letter-spacing: 0.2pt;
     word-spacing: 1px;
-   margin-top: -240mm;
+    width: 80mm;
+  }
+  @top-center {
+    content: " ";
+  }
+  @bottom-left {
+    /* content: "Ersteller: FTU-SD1, 28606" "\a" "Freigeber: Gesamtvorstand, FTU"; */
+    white-space: pre;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.58rem; /* 6.96pt */
+    letter-spacing: 0.2pt;
+    word-spacing: 1px;
+    width: 34%;
+  }
+  
+  @bottom-center {
+    content: " ";
+    width: 33%;
+  }
+  @bottom-right {
+    content: "© Copyright holder" "\a" " ";
+    white-space: pre;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.58rem; /* 6.96pt */
+    letter-spacing: 0.2pt;
+    word-spacing: 1px;
+    width: 33%;
   }
 }
 
@@ -45,7 +70,7 @@
     content: " ";
   }
   @bottom-left {
-    content: "Ersteller: FTU-SD1, 28606" "\a" "Freigeber: Gesamtvorstand, FTU";
+    /* content: "Ersteller: FTU-SD1, 28606" "\a" "Freigeber: Gesamtvorstand, FTU"; */
     white-space: pre;
     font-family: Arial, sans-serif;
     font-weight: normal;
@@ -91,7 +116,7 @@
     content: " ";
   }
   @bottom-left {
-    content: "Ersteller: FTU-SD1, 28606" "\a" "Freigeber: Gesamtvorstand, FTU";
+    content: " " "\a" " ";
     white-space: pre;
     font-family: Arial, sans-serif;
     font-weight: normal;
@@ -207,7 +232,11 @@ body {
   counter-reset: chapter figure-cat-figure figure-cat-photo figure-cat-table footnote-counter footnote-marker-counter;
   overflow-wrap: break-word;
 }
-
+body.user-contents {
+  max-width: 60ch;
+  margin: 0 auto;
+  max-height: 150mm;
+}
 html {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -225,7 +254,7 @@ nav::before {
   content: "Inhaltsverzeichnis";
   font-family: Arial, sans-serif;
   font-size: 1.17rem; /* 14.04pt */
-  color: rgb(0,0,145); 
+  color: rgb(1,121,100); 
   font-weight: bold;
   font-style: italic;
   text-align: left;
@@ -235,8 +264,8 @@ nav {
   margin: 2em 6em 4em 0;
   break-before: always;
   page-break-before: always;
-  font-size: 0.83rem; /* 9.96pt */
-  color: rgb(0,0,145); 
+  font-size: 0.90rem;
+  color: rgb(1,121,100); 
   font-weight: bold;
   font-style: italic;
 }
@@ -250,13 +279,23 @@ nav li a {
   display: inline-flex;
   width: 100%;
   text-decoration: none;
-  color: currentColor;
+  color: black;
   align-items: baseline;
   border: none;
 }
 nav li a::before {
   margin-right: 0.5em;
-  border-bottom: 1px dotted;
+  border-image: url(media/dot.png);
+border-image-width: 0 0 10px 0;
+border-image-repeat: stretch;
+  /* margin-bottom 2rem;
+  border-width 0 0 13px 0;
+  border-style: dotted;
+  border-color: rgb(0, 0, 0);
+  
+  border-image-slice: 33% 33%;
+  border-image-repeat: round; */
+  
   content: "";
   order: 1;
   flex: auto;
@@ -267,7 +306,7 @@ nav li ol {
 }
 
 nav li ol li {
-  margin-left: 1.2em;
+  margin-left: 0.8em;
 }
 
 
@@ -319,15 +358,35 @@ nav li a::after {
 .user-contents.tocpage {
   page-break-before: always!important;
 }
-.booktitle {
+div.titlepage {
+ /*  background-image: url("media/logo.png");
+  background-position: calc (0% + 60mm) 100%;
+  background-size: 30%;
+  background-repeat: no-repeat;/*logo cover image*/
+  margin-bottom: 2em; 
+  position: relative;
+}
+div.titlepage:after{
+  content: "";
+  background: transparent url(media/logo.png) 0 0 no-repeat;
+  position: absolute;
+  right: -30mm;
+  top: -80mm;
+  height: 150px; /*add height of your image here*/ 
+  width: 200px; /*add width of your image here*/
+  z-index: 1;  
+}
+h1.booktitle {
   text-align: left;
+  font-size: 2.08rem;
+  margin: 6em 0 0 0;
 }
 
 h1.part { display: none; }
 .article-title {
   font-family: Arial, sans-serif;
   font-size: 1.17rem; /* 14.04pt */
-  color: rgb(0,0,145); 
+  color: rgb(1,121,100); 
   font-weight: bold;
   font-style: italic;
   text-align: left;
@@ -335,7 +394,6 @@ h1.part { display: none; }
   /* margin-top: 2em; */
   page-break-inside: avoid;
   page-break-after: avoid;
-  text-align: left;
   text-transform: none;
   hyphens: manual;
   white-space: pre-line;
@@ -358,7 +416,7 @@ h1.part { display: none; }
 .article-bibliography-header {
   font-family: Arial, sans-serif;
   font-size: 1.17rem; /* 14.04pt */
-  color: rgb(0,0,145); 
+  color: rgb(1,121,100); 
   font-weight: bold;
   font-style: italic;
   text-align: left;
@@ -367,7 +425,6 @@ h1.part { display: none; }
   /* margin-top: 2em; */
   page-break-inside: avoid;
   page-break-after: avoid;
-  text-align: left;
   text-transform: none;
   hyphens: manual;
   white-space: pre-line;
@@ -376,10 +433,10 @@ h1.part { display: none; }
 }
 .csl-entry {
   font-family: Arial, sans-serif;
-  font-size: 0.83rem; /* 9.96pt */
-  line-height: 1.2; 
+  font-size: 0.90rem;
+  line-height: 1.3; 
   margin-bottom: 1em;
-  margin-left: 4em;
+  /* margin-left: 4em; */
   margin-right: 4em;
   max-width: 68ch;
   /* letter-spacing: 0.2pt;
@@ -387,12 +444,10 @@ h1.part { display: none; }
 }
 
 .article-body {
-  font-size: 0.83rem; /* 9.96pt */
-  margin: 0 4em;
+  font-size: 0.90rem;
+  /* margin: 0 4em; */
 }
-.article-body h1, .article-body h2, .article-body h3, .article-body h4, .article-body h5 {
-  margin-left: -4em!important;
-}
+
 .image-width-100 {
     width: 99%;
     box-sizing:border-box;
@@ -424,9 +479,9 @@ h1.part { display: none; }
 
 p {
   font-family: Arial, sans-serif;
-  font-size: 0.83rem; /* 9.96pt */
-  max-width: 68ch;
-  line-height: 1.2; 
+  font-size: 0.90rem;
+  /* max-width: 68ch; */
+  line-height: 1.3; 
   margin-bottom: 1em;
   /* letter-spacing: 0.2pt;
   word-spacing: 0.2pt; */
@@ -479,7 +534,7 @@ pre {
 a, .csl-bib-body a {
   color: #000;
   text-decoration: none !important;
-  border-bottom: 1px solid rgb(0,0,145);
+  border-bottom: 1px solid rgb(1,121,100);
 }
 
 
@@ -512,8 +567,7 @@ blockquote {
   width: 80%;
   position: relative;
   font-family: Arial, sans-serif;
-  font-size: 0.83rem; /* 9.96pt */
-  vertical-align: baseline;
+  font-size: 0.90rem;
   margin-top: 9pt;
   margin-bottom: 9pt;
   margin-left: 40px;/* 3.3241rem*/
@@ -530,7 +584,7 @@ blockquote:before {
   top: -10px;
   z-index: 5;
   position: absolute;
-  color: rgb(0,0,145);
+  color: rgb(1,121,100);
   opacity: 1;
 }
 
@@ -549,7 +603,7 @@ blockquote  p.att { text-align: right; }
 h2, h2 strong {
 font-family: Arial, sans-serif;
 margin-bottom: 0.5em;
-color: rgb(0, 0, 145);
+color: rgb(1,121,100);
 }
 h3, h3 strong 
 {
@@ -569,7 +623,7 @@ h6 {
 h1 {
   font-family: Arial, sans-serif;
   font-size: 1.17rem; /* 14.04pt */
-  color: rgb(0,0,145);
+  color: rgb(1,121,100)/* rgb(0,0,145)*/ ; 
   font-weight: bold;
   font-style: italic;
   margin-top: 1.1em;
@@ -586,7 +640,7 @@ h1 {
 h1 strong { font-weight: bold;}
 
 h2 {
-  font-size: 0.83rem; /* 9.96pt */
+  font-size: 0.90rem;
   font-family: Arial, sans-serif;
   font-weight: bold;
   text-transform: none;
@@ -596,14 +650,14 @@ h2 {
 }
 
 h3 {
-  font-size: 0.83rem; /* 9.96pt */
+  font-size: 0.90rem; /* 9.96pt */
   page-break-inside: avoid;
   page-break-after: avoid;
   font-weight: bold;
 }
 
 h4 {
-  font-size: 0.78rem;
+  font-size: 0.83rem;
   font-weight: bold;
   page-break-inside: avoid;
   page-break-after: avoid;
@@ -612,7 +666,7 @@ h4 {
 h5 {
   font-family : Arial, sans-serif;
   font-weight: bolder;
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   page-break-inside: avoid;
   page-break-after: avoid;
 }
@@ -746,8 +800,8 @@ ul {
   margin-left: 0;
   margin-right: 0;
   padding-left: 40px;
-  line-height: 1.2;
-  font-size: 0.83rem; /* 9.96pt */
+  line-height: 1.3;
+  font-size: 0.90rem;
   hyphens: none;
 }
 
@@ -778,8 +832,8 @@ ul > li:before {
   margin-left: 0;
   margin-right: 0;
   padding-left: 25px;
-  line-height: 1.2;
-  font-size: 0.83rem; /* 9.96pt */
+  line-height: 1.3;
+  font-size: 0.90rem;
   hyphens: none;
 }
 ol li {
@@ -820,7 +874,6 @@ table {
   text-align: left;
   font-size: 8pt;
 }
-
 th {
   padding: 1em;
   font-style: italic;
@@ -839,7 +892,7 @@ table.tbnostyle tr:first-of-type td {
 table caption {
   /*border-top: 1px solid rgb(231,231,231);
   border-bottom: 1px solid #435772;*/
-  padding: 1em;
+  padding: 1em 1em  1em 0;
   text-align: left;
   margin: 0 auto;
   vertical-align: middle;
@@ -904,60 +957,24 @@ tr:last-of-type td {
   padding-bottom: 0.6em;
 }
 
-
 tr:first-of-type {
     font-weight: normal;
 }
 
-table + p {
+/*table + p {
   margin: 0 auto;
-  /* width: 95% !important; */
-  margin-top: 0;
-}
+  width: 95% !important;
+  margin-top: 0; 
+}*/
 
 table + p + p {
   margin-top: 18pt;
 }
 table, td, th {
-  border: 1px solid black;
+  border: 0.1pt solid black;
   border-collapse: collapse;
-}
+} 
 
-/*ul numeric*/
-ul.numeric-decimals { counter-reset:section -1; list-style-type:none; list-style-position: outside; padding-left: 0; font-size: 9pt;}
-ul.numeric-decimals li { list-style-type:none;
-  margin-top: 0.3em;
-  color: black;
-  margin-left: 0;
-  margin-left: 0;
-  text-indent: 0;
-  letter-spacing: 0.2pt;
-  word-spacing: 0px; }
-ul.numeric-decimals li ul { counter-reset:subsection; }
-ul.numeric-decimals li:before{
-    counter-increment:section;
-    content:counter(section) ". ";/*content:"Section " counter(section) ". ";*/
-}
-ul.numeric-decimals li ul li:before {
-    counter-increment:subsection;
-    content:counter(section) "." counter(subsection) " ";
-}
-
-/*3 level*/
-ul.numeric-decimals li ul li ul { counter-reset:subsubsection; }
-ul.numeric-decimals li ul li:before{
-    counter-increment:subsection;
-    content:counter(section) "." counter(subsection) " ";
-}
-ul.numeric-decimals li ul li ul li:before {
-    counter-increment:subsubsection;
-    content:counter(section) "." counter(subsection) "." counter(subsubsection) " ";
-}
-
-/*None level*/
-ul.numeric-decimals li.none:before {
-    content: " ";
-}
 
 div.article-body > h2:first-child, div.Kolophon > h2:first-child {
   margin-top: 0;
@@ -987,7 +1004,7 @@ h2 + p /* h3+p*/ {
 /* styling pieces */
 
 
-body {
+/* body {
   counter-reset : h1;
     }
   .article-title {
@@ -1044,10 +1061,10 @@ body {
   h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {
   content : "";
   counter-increment : none;
-    }
+    } */
 
 /* Docsify */
-  .markdown-section .article-body h1, 
+ /*  .markdown-section .article-body h1, 
   .markdown-section .article-body h2, 
   .markdown-section .article-body h3, 
   .markdown-section .article-body h4, 
@@ -1064,17 +1081,17 @@ body {
   }
   .content .markdown-section li p {
     display: inline!important;
-}
-.markdown-section .fnlist { 
+} */
+/* .markdown-section .fnlist { 
   margin-left: 4em;
-}
+} */
 
 
 @media print {
   a {
     color: #000;
     text-decoration: none !important;
-    border-bottom: 1px solid rgb(0,0,145);
+    border-bottom: 0.1pt solid rgb(1,121,100);
   }
 
   @page {
