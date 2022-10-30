@@ -2,19 +2,19 @@
   size: 210mm 297mm;
   margin-top: 30mm;
   margin-bottom: 30mm;
+  margin-left: 28mm;
+  margin-right: 20mm;
 }
 
  @page :first {
   size: 210mm 297mm;
-  margin-left: 20mm;
-  margin-right: 15mm;
   @top-left {
     content: "Blat " counter(page) "/" counter(pages) "\a" env(doc-title);
     white-space: pre;
     font-family: Arial, sans-serif;
     font-weight: normal;
     font-style: italic;
-    font-size: 0.58rem; /* 6.96pt */
+    font-size: 6.96pt; /* 0.58rem */
     letter-spacing: 0.2pt;
     word-spacing: 1px;
     width: 80mm;
@@ -23,45 +23,43 @@
     content: " ";
   }
   @bottom-left {
-    /* content: "Ersteller: FTU-SD1, 28606" "\a" "Freigeber: Gesamtvorstand, FTU"; */
+    content: " ";
     white-space: pre;
     font-family: Arial, sans-serif;
     font-weight: normal;
     font-style: italic;
-    font-size: 0.58rem; /* 6.96pt */
+    font-size: 6.96pt; /* 0.58rem */
     letter-spacing: 0.2pt;
     word-spacing: 1px;
-    width: 34%;
+    width: 60mm;
   }
   
   @bottom-center {
     content: " ";
-    width: 33%;
+    width: 57mm;
   }
   @bottom-right {
-    content: "© Copyright holder" "\a" " ";
+    content: "© Copyright holder";
     white-space: pre;
     font-family: Arial, sans-serif;
     text-align: left;
     font-weight: normal;
     font-style: italic;
-    font-size: 0.58rem; /* 6.96pt */
+    font-size: 6.96pt; /* 0.58rem */
     letter-spacing: 0.2pt;
     word-spacing: 1px;
-    width: 33%;
+    width: 45mm;
   }
 }
 
 @page :left {
-  margin-left: 20mm;
-  margin-right: 15mm;
   @top-left {
     content: "Blat " counter(page) "/" counter(pages) "\a" env(doc-title);
     white-space: pre;
     font-family: Arial, sans-serif;
     font-weight: normal;
     font-style: italic;
-    font-size: 0.58rem; /* 6.96pt */
+    font-size: 6.96pt; /* 0.58rem */
     letter-spacing: 0.2pt;
     word-spacing: 1px;
     width: 80mm;
@@ -70,23 +68,23 @@
     content: " ";
   }
   @bottom-left {
-    /* content: "Ersteller: FTU-SD1, 28606" "\a" "Freigeber: Gesamtvorstand, FTU"; */
+    /* content: " " "\a" " "; */
     white-space: pre;
     font-family: Arial, sans-serif;
     font-weight: normal;
     font-style: italic;
-    font-size: 0.58rem; /* 6.96pt */
+    font-size: 6.96pt; /* 0.58rem */
     letter-spacing: 0.2pt;
     word-spacing: 1px;
-    width: 34%;
+    width: 60mm;
   }
   
   @bottom-center {
     content: " ";
-    width: 33%;
+    width: 57mm;
   }
   @bottom-right {
-    content: "© Copyright holder" "\a" " ";
+    content: "© Copyright holder";
     white-space: pre;
     font-family: Arial, sans-serif;
     text-align: left;
@@ -95,19 +93,17 @@
     font-size: 0.58rem; /* 6.96pt */
     letter-spacing: 0.2pt;
     word-spacing: 1px;
-    width: 33%;
+    width: 45mm;
   }
 }
 @page :right {
-  margin-left: 20mm;
-  margin-right: 15mm;
   @top-left {
     content: "Blat " counter(page) "/" counter(pages) "\a" env(doc-title);
     white-space: pre;
     font-family: Arial, sans-serif;
     font-weight: normal;
     font-style: italic;
-    font-size: 0.58rem; /* 6.96pt */
+    font-size: 6.96pt; /* 0.58rem */
     letter-spacing: 0.2pt;
     word-spacing: 1px;
     width: 80mm;
@@ -121,27 +117,27 @@
     font-family: Arial, sans-serif;
     font-weight: normal;
     font-style: italic;
-    font-size: 0.58rem; /* 6.96pt */
+    font-size: 6.96pt; /* 0.58rem */
     letter-spacing: 0.2pt;
     word-spacing: 1px;
-    width: 34%;
+    width: 60mm;
   }
   
   @bottom-center {
     content: " ";
-    width: 33%;
+    width: 57mm;
   }
   @bottom-right {
-    content: "© Copyright holder" "\a" " ";
+    content: " ";
     white-space: pre;
     font-family: Arial, sans-serif;
     text-align: left;
     font-weight: normal;
     font-style: italic;
-    font-size: 0.58rem; /* 6.96pt */
+    font-size: 6.96pt; /* 0.58rem */
     letter-spacing: 0.2pt;
     word-spacing: 1px;
-    width: 33%;
+    width: 45mm;
   }
 }
 /* 
@@ -233,9 +229,9 @@ body {
   overflow-wrap: break-word;
 }
 body.user-contents {
-  max-width: 60ch;
+  max-width: 60ch;/*126.5mm*/
   margin: 0 auto;
-  max-height: 150mm;
+  max-height: 220mm;
 }
 html {
   font-family: Arial, sans-serif;
@@ -284,18 +280,9 @@ nav li a {
   border: none;
 }
 nav li a::before {
-  margin-right: 0.5em;
-  border-image: url(media/dot.png);
-border-image-width: 0 0 10px 0;
-border-image-repeat: stretch;
-  /* margin-bottom 2rem;
-  border-width 0 0 13px 0;
-  border-style: dotted;
-  border-color: rgb(0, 0, 0);
-  
-  border-image-slice: 33% 33%;
-  border-image-repeat: round; */
-  
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  border-bottom: 1px dotted;
   content: "";
   order: 1;
   flex: auto;
@@ -306,9 +293,8 @@ nav li ol {
 }
 
 nav li ol li {
-  margin-left: 0.8em;
+  margin-left: 0.5em;
 }
-
 
 nav li a::after {
  text-align: right;
@@ -371,7 +357,7 @@ div.titlepage:after{
   background: transparent url(media/logo.png) 0 0 no-repeat;
   position: absolute;
   right: -30mm;
-  top: -80mm;
+  top: -60mm;
   height: 150px; /*add height of your image here*/ 
   width: 200px; /*add width of your image here*/
   z-index: 1;  
@@ -379,7 +365,11 @@ div.titlepage:after{
 h1.booktitle {
   text-align: left;
   font-size: 2.08rem;
-  margin: 6em 0 0 0;
+  margin: 6em 0 1.5em 0;
+}
+
+.titlepage h2, .titlepage h3, .titlepage h4 {
+  margin-bottom: 1.5em;
 }
 
 h1.part { display: none; }
@@ -805,12 +795,12 @@ ul {
   hyphens: none;
 }
 
-ul > li {
+.user-contents ul > li {
   /* text-indent: -15px; */
   /* margin-bottom: 0.5em; */
   height: auto;
 }
-ul > li:before {
+.user-contents ul > li:before {
   content: "-";
   /* text-indent: -20px; */
   padding-right: 20px;
@@ -976,7 +966,7 @@ table, td, th {
 } 
 
 
-div.article-body > h2:first-child, div.Kolophon > h2:first-child {
+div.article-body > h2:first-child {
   margin-top: 0;
 }
 
@@ -994,11 +984,6 @@ h3 + p, h4 + p, h5 + p {
 
 h2 + p /* h3+p*/ {
     page-break-after: avoid;
-}
-
-.txtnospace p, p.txtnospace {
-  letter-spacing: 0.1pt !important;
-  word-spacing: 0.2pt !important;
 }
 
 /* styling pieces */
@@ -1079,12 +1064,13 @@ h2 + p /* h3+p*/ {
   .markdown-section h1::before, .content .markdown-section .article-title::before {
     font-size: var(--heading-h1-font-size);
   }
-  .content .markdown-section li p {
-    display: inline!important;
-} */
+  */
 /* .markdown-section .fnlist { 
   margin-left: 4em;
 } */
+.content .markdown-section li p {
+  display: inline!important;
+} 
 
 
 @media print {
@@ -1096,6 +1082,18 @@ h2 + p /* h3+p*/ {
 
   @page {
     size: 210mm 297mm;
+  }
+  nav, p, h2, h3, ul, ol {
+    font-size: 9.96pt;
+    line-height:1.21;
+  }
+  h1, .article-title, .article-bibliography-header {
+    font-size: 14.04pt;
+  }
+  body.user-contents {
+    max-width: 126.5mm;/*60ch*/
+    margin: 0 auto;
+    max-height: 220mm;
   }
 
 }
