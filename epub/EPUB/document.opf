@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="fidus" xml:lang="en-GB" prefix="cc: http://creativecommons.org/ns#">
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="fidus" xml:lang="de-DE" prefix="cc: http://creativecommons.org/ns#">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="fidus">116</dc:identifier>
-    <dc:title>A Manual Template</dc:title>
+    <dc:title>A Manual Template v1.1 24 Oct 2022</dc:title>
     <dc:creator>
       The Author
     </dc:creator>
-    <dc:language>en-GB</dc:language>
-    <meta property="dcterms:modified">2022-10-06T18:42:51Z</meta>
-    <dc:date>2022-10-06</dc:date>
+    <dc:language>de-DE</dc:language>
+    <meta property="dcterms:modified">2022-11-01T18:10:34Z</meta>
+    <dc:date>2022-11-01</dc:date>
     <dc:rights>Creative Commons Share-Alike 4.0</dc:rights>
     <dc:publisher>The Publisher</dc:publisher>
     <dc:subject>book</dc:subject>
@@ -26,6 +26,8 @@
     <item id="nav" href="document-nav.xhtml" properties="nav" media-type="application/xhtml+xml" />
     <item id="copyright" href="copyright.xhtml" media-type="application/xhtml+xml" />
     <item id="img0" href="images/fb7c0a1e-b728-4885-adbb-1cae4348efa6.jpg" media-type="image/jpeg" />
+    <item id="font0" href="css/media/logo.png" media-type="font/sfnt" />
+    <item id="font1" href="css/media/dot.png" media-type="font/sfnt" />
     <item id="css0" href="css/document.css" media-type="text/css" />
     <item id="css1" href="css/manual001.css" media-type="text/css" />
     <item id="mathlive-0" href="css/mathlive.css" media-type="text/css" />
