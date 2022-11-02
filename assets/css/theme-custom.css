@@ -233,7 +233,7 @@ color: var(--base-color);
 
 .content .markdown-section table th {
   border-left: 0;
-  border-right: 0;
+  border-right: 1pt;
   padding: 0em 1em;
   font-size: 12px;
   font-style: italic;
