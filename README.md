@@ -1,8 +1,8 @@
-# Fidus Book Style - Report001
+# Fidus Book Style - Manual001
 
 A Book Style intended for upload to Fidus Writer.
 
-Style name: Report001
+Style name: Manual001
 
 Example use: [A Manual Style - Sample Content](https://mrchristian.github.io/Manual001-Fidus-Style/)
 
