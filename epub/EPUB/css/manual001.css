@@ -222,7 +222,7 @@ nav::before {
 }
 
 nav {
-  margin: 2em 6em 4em 0;
+  margin: 2em 2em 4em 0;
   break-before: always;
   page-break-before: always;
   font-size: 0.90rem;
@@ -726,6 +726,10 @@ figure figcaption {
   text-align: center;
   font-size: 8pt;
   font-style: italic;
+}
+
+.epub nav li a::before {
+  border-bottom: none;
 }
 
 /*From Fidus writer

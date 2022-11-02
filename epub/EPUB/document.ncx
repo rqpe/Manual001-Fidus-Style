@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ncx xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="de">
+<ncx xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
   <head>
     <meta name="dtb:fidus" content="116" />
   </head>
   <docTitle>
-    <text>A Manual Template v1.1 24 Oct 2022</text>
+    <text>A Manual Style - Sample Content</text>
   </docTitle>
   <navMap>
 
     <!-- 2.01 NCX: playOrder is optional -->
     <navPoint id="t1">
-      <navLabel><text>Titelblatt</text></navLabel>
+      <navLabel><text>Title page</text></navLabel>
       <content src="titlepage.xhtml#title" />
     </navPoint>
     <navPoint id="t0-1">
@@ -149,7 +149,7 @@
         <content src="document-5.xhtml#_5_0" />
       </navPoint>
       <navPoint id="t2">
-        <navLabel><text>Urheberrechte</text></navLabel>
+        <navLabel><text>Copyright</text></navLabel>
         <content src="copyright.xhtml#copyright" />
       </navPoint>
     </navPoint>
