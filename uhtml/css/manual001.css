@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=fallback');
 @page {
   size: 210mm 297mm;
   margin-top: 30mm;
@@ -9,7 +10,7 @@
 @page :left {
   @top-left {
     content: env(doc-title);
-    font-family: Arial, sans-serif;
+    =
     font-weight: normal;
     font-style: italic;
     font-size: 6.96pt; /* 0.58rem */
@@ -23,7 +24,7 @@
   }
   @top-right {
     content: string(chapter-title, start);
-    font-family: Arial, sans-serif;
+    font-family: '0pen sans', sans-serif;
     font-weight: normal;
     text-align: right;
     font-style: italic;
@@ -45,7 +46,7 @@
   @bottom-right {
     content: "Page " counter(page) "/" counter(pages);/*Change to Blat*/
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: '0pen sans', sans-serif;
     text-align: right;
     font-weight: normal;
     font-style: italic;
@@ -58,7 +59,7 @@
 @page :right {
   @top-left {
     content: env(doc-title);
-    font-family: Arial, sans-serif;
+    font-family: '0pen sans', sans-serif;
     font-weight: normal;
     font-style: italic;
     font-size: 6.96pt;
@@ -72,7 +73,7 @@
   }
   @top-right {
     content: string(chapter-title, start);
-    font-family: Arial, sans-serif;
+    font-family: '0pen sans', sans-serif;
     font-weight: normal;
     text-align: right;
     font-style: italic;
@@ -94,7 +95,7 @@
   @bottom-right {
     content: "Page " counter(page) "/" counter(pages);/*Change to Blat*/
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: '0pen sans', sans-serif;
     text-align: right;
     font-weight: normal;
     font-style: italic;
@@ -199,7 +200,7 @@ body.user-contents {
   max-height: 220mm;
 }
 html {
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   font-size: 16px;
   color: rgb(0,0,0);
   text-rendering: optimizeLegibility;
@@ -213,9 +214,9 @@ html {
 
 nav::before {
   content: "Table of Contents"; /*Change to  Inhaltsverzeichnis*/
-  font-family: Arial, sans-serif;
+  font-family: 'Arsenal', sans-serif;
   font-size: 1.17rem;
-  color: rgb(1,94,78); 
+  color: rgb(87,148,255);  
   font-weight: bold;
   font-style: italic;
   text-align: left;
@@ -226,9 +227,7 @@ nav {
   break-before: always;
   page-break-before: always;
   font-size: 0.90rem;
-  color: rgb(1,94,78); 
-  font-weight: bold;
-  font-style: italic;
+  color: rgb(87,148,255); 
 }
 
 nav ol {
@@ -308,11 +307,10 @@ h1.booktitle {
 h1.part { display: none; }
 .article-title {
   string-set: chapter-title content(text);
-  font-family: Arial, sans-serif;
+  font-family: 'Arsenal', sans-serif;
   font-size: 1.17rem;
-  color: rgb(1,94,78); 
+  color: rgb(87,148,255);  
   font-weight: bold;
-  font-style: italic;
   text-align: left;
   margin-bottom: 1.2em;
   page-break-inside: avoid;
@@ -337,11 +335,10 @@ h1.part { display: none; }
 
 /*Literaturverzeichnis*/
 .article-bibliography-header {
-  font-family: Arial, sans-serif;
+  font-family: 'Arsenal', sans-serif;
   font-size: 1.17rem;
-  color: rgb(1,94,78); 
+  color: rgb(87,148,255);  
   font-weight: bold;
-  font-style: italic;
   text-align: left;
   margin-top: 1.1em;
   margin-bottom: 1.2em;
@@ -354,7 +351,7 @@ h1.part { display: none; }
   word-spacing: 1px;
 }
 .csl-entry {
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   font-size: 0.90rem;
   line-height: 1.3; 
   margin-bottom: 1em;
@@ -401,7 +398,7 @@ h1.part { display: none; }
 }
 
 p {
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   font-size: 0.90rem;
   line-height: 1.3; 
   margin-bottom: 1em;
@@ -433,7 +430,7 @@ li b {
 
 table li strong
 table li b {
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   font-weight: bold;
 }
 
@@ -461,7 +458,7 @@ strong em {
 }
 
 var {
-  font-family: Arial, Helvetica neue, sans-serif;
+  font-family: '0pen sans', sans-serif;
   font-weight: normal;
 }
 
@@ -483,7 +480,7 @@ blockquote {
   display: block;
   width: 80%;
   position: relative;
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   font-size: 0.90rem;
   margin-top: 9.8pt;
   margin-bottom: 9.8pt;
@@ -494,14 +491,14 @@ blockquote {
 }
 
 blockquote:before {
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   content: "“";
-  font-size: 4em;
+  font-size: 8em;
   left: -45px;
   top: -10px;
   z-index: 5;
   position: absolute;
-  color: rgb(1,94,78);
+  color:rgb(87,148,255);  
   opacity: 1;
 }
 
@@ -518,13 +515,13 @@ blockquote strong {
 blockquote  p.att { text-align: right; }
 
 h2, h2 strong {
-font-family: Arial, sans-serif;
+font-family: '0pen sans', sans-serif;
 margin-bottom: 0.5em;
-color: rgb(1,94,78);
+color: rgb(87,148,255); 
 }
 h3, h3 strong 
 {
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   margin-bottom: 0.5em;
   color: rgb(0,0,0);
   font-weight: bold;
@@ -532,15 +529,15 @@ h3, h3 strong
 h4, h4 strong,
 h5,
 h6 {
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   margin-bottom: 0.5em;
   color: rgb(0,0,0);
 }
 
 h1 {
-  font-family: Arial, sans-serif;
+  font-family: 'Arsenal', sans-serif;
   font-size: 1.17rem;
-  color: rgb(1,121,100);
+  color: rgb(87,148,255); 
   font-weight: bold;
   font-style: italic;
   margin-top: 1.1em;
@@ -558,7 +555,7 @@ h1 strong { font-weight: bold;}
 
 h2 {
   font-size: 0.90rem;
-  font-family: Arial, sans-serif;
+  font-family: 'Arsenal', sans-serif;
   font-weight: bold;
   text-transform: none;
   page-break-inside: avoid;
@@ -580,14 +577,14 @@ h4 {
 }
 
 h5 {
-  font-family : Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   font-weight: bolder;
   font-size: 0.78rem;
   page-break-inside: avoid;
   page-break-after: avoid;
 }
 h6 {
-  font-family : Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   font-weight: bolder;
   font-size: 0.7rem;
   page-break-inside: avoid;
@@ -620,7 +617,7 @@ h1:before {
   font-size: 9pt;
   line-height: 10.8pt;
   list-style-position: outside;
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
 }
 
 .footnotes ol li p {
@@ -628,7 +625,7 @@ h1:before {
   font-size: 9pt;
   line-height: 10.75pt;
   word-wrap: break-word;
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
 }
 
 .footnotes ol li p a {
@@ -640,7 +637,7 @@ li[id*="fn"] {
   text-indent: 0;
   font-size: 9pt;
   margin-left: 1.3pc;
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
 }
 
 /*epub*/
@@ -648,7 +645,7 @@ li[id*="fn"] {
   color: black;
   text-indent: 0;
   font-size: 9pt;
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
 }
 
 .footnote-content span {
@@ -678,7 +675,7 @@ figure img {
 
 
 figure figcaption {
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   margin-top: 5px;
   font-style: normal;
   color: black;
@@ -740,7 +737,7 @@ ol li {
 table {
   margin: 0 auto;
   width: 100% !important;
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   page-break-inside: avoid;
   margin-top: 9.80pt;
   margin-bottom: 18pt;
@@ -752,7 +749,7 @@ th {
   font-style: italic;
   font-weight: bold;
   color:#fff;
-  background-color: rgb(133,141,146);
+  background-color: rgb(87,148,255); 
 }
 
 table.tbnostyle tr:first-of-type td {
@@ -794,7 +791,7 @@ table ul,
 table li,
 table ol {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: '0pen sans', sans-serif;
   text-align: left;
   text-indent: 0;
 }
@@ -843,7 +840,7 @@ h2 + p {
   a {
     color: #000;
     text-decoration: none !important;
-    border-bottom: 0.1pt solid rgb(1,94,78);
+    border-bottom: 0.1pt solid rgb(87,148,255); 
   }
 
   @page {
