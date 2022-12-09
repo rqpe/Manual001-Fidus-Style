@@ -3,9 +3,10 @@
 :root {
     --base-font-size                                  : 16px;
     --base-font-family                                : "Open sans", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif; /*--base-color: var(--mono-shade2);*/
+    --theme-color                                     : rgb(87,148,255);     
     --link-color                                      : #000; 
-    --link-color--hover                               : #015e4e;
-    --link-border-bottom--hover                       : #015e4e;
+    --link-color--hover                               : var(--theme-color );
+    --link-border-bottom--hover                       : var(--theme-color );
     --link-text-decoration                            : underline;
     --link-text-decoration-color                      : #000;
     --sidebar-name-color                              : #000;
@@ -13,7 +14,7 @@
     --sidebar-nav-link-color--active                  : #4D4D4D;
     --cover-heading-font-size-max                     : 40;
     --cover-heading-font-size-min                     : 34;
-    --blockquote-border-color                         : #015e4e;
+    --blockquote-border-color                         : var(--theme-color );
     --heading-font-family                             : 'Arsenal', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif;
     --heading-h1-font-size: 3rem;
     --heading-h1-font-weight: 800;
@@ -29,7 +30,7 @@
     --heading-h6-font-size: 0.9rem; /*var(--font-size-xs)*/
     --sidebar-nav-link-font-weight--active            : bold;
     --sidebar-border-color                            : rgb(174,182,187);
-    --sidebar-nav-link-border-color--active           : #015e4e;      
+    --sidebar-nav-link-border-color--active           : var(--theme-color );      
     --sidebar-width                                   : 22rem;
     --sidebar-nav-pagelink-background-position        : 3px 10px;
     --sidebar-nav-pagelink-background-position--active: 3px 10px; /*left center*/
@@ -298,7 +299,7 @@ section.content > aside.nav > .page_toc ul a:hover span {
   color: #EE868F !important;
 }
 aside.nav > .page_toc .active {
-  border-left: 5px solid #015e4e;
+  border-left: 5px solid var(--theme-color );
   color: inherit !important;
   padding-left: 10px;
   font-weight: bold;
