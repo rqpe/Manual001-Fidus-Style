@@ -306,9 +306,9 @@ h1.booktitle {
   font-weight: normal;
 }
 
-.titlepage h2, .titlepage h3, .titlepage h4 {
+/* .titlepage h2, .titlepage h3, .titlepage h4 {
   margin-bottom: 1.5em;
-}
+} */
 
 h1.part { display: none; }
 .article-title {
@@ -454,7 +454,7 @@ pre {
 a, .csl-bib-body a {
   color: #000;
   text-decoration: none !important;
-  border-bottom: 0.1pt solid rgb(1,94,78);
+  border-bottom: 0.1pt solid rgb(87,148,255);  
 }
 
 
