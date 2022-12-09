@@ -245,7 +245,7 @@ color: var(--base-color);
   /* border-bottom: 2px solid #0B87DA; */
 }
 .content .markdown-section table, .content .markdown-section th, .content .markdown-section td {
-    border: 0.1pt solid var(--theme-color );
+    /* border: 0.1pt solid var(--theme-color ); */
     border-collapse: collapse;
   }  
 .markdown-section th {
