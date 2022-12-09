@@ -11,7 +11,7 @@
     --link-text-decoration-color                      : #000;
     --sidebar-name-color                              : #000;
     --sidebar-background                              : #C9D5DE;
-    --sidebar-nav-link-color--active                  : #4D4D4D;
+    --sidebar-nav-link-color--active                  : var(--theme-color );
     --cover-heading-font-size-max                     : 40;
     --cover-heading-font-size-min                     : 34;
     --blockquote-border-color                         : var(--theme-color );
@@ -241,13 +241,17 @@ color: var(--base-color);
   font-style: italic;
   font-weight: bold;
   color:#fff;
-  background-color: rgb(133,141,146);
+  background-color: var(--theme-color);
   /* border-bottom: 2px solid #0B87DA; */
 }
 .content .markdown-section table, .content .markdown-section th, .content .markdown-section td {
-    border: 0.1pt solid black;
+    border: 0.1pt solid var(--theme-color );
     border-collapse: collapse;
   }  
+.markdown-section th {
+    background-color: var(--theme-color);
+    border-color: var(--table-cell-border-color);
+}
 .content .markdown-section table caption, .content .markdown-section figure figcaption {
     font-size: 0.8rem;
     margin: 0.5em 0 0.75em;
