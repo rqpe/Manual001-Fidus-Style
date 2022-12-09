@@ -489,7 +489,7 @@ blockquote {
 }
 
 blockquote:before {
-  font-family: '0pen sans', sans-serif;
+  font-family: 'Arsenal', sans-serif;
   content: "“";
   font-size: 8em;
   left: -45px;
