@@ -29,7 +29,7 @@
     --heading-h5-font-weight: 500;
     --heading-h6-font-size: 0.9rem; /*var(--font-size-xs)*/
     --sidebar-nav-link-font-weight--active            : bold;
-    --sidebar-border-color                            : rgb(174,182,187);
+    --sidebar-border-color                            : var(--theme-color );/* rgb(174,182,187); */
     --sidebar-nav-link-border-color--active           : var(--theme-color );      
     --sidebar-width                                   : 22rem;
     --sidebar-nav-pagelink-background-position        : 3px 10px;
@@ -248,7 +248,7 @@ color: var(--base-color);
     /* border: 0.1pt solid var(--theme-color ); */
     border-collapse: collapse;
   }  
-.markdown-section th {
+  .markdown-section th {
     background-color: var(--theme-color);
     border-color: var(--table-cell-border-color);
 }
