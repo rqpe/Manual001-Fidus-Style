@@ -195,7 +195,7 @@ body {
 }
 body.user-contents {
   max-width: 60ch;/*126.5mm*/
-  margin: 0 auto;
+  /* margin: 0 auto; */
   max-height: 220mm;
 }
 html {
@@ -296,6 +296,14 @@ h1.booktitle {
   text-align: left;
   font-size: 2.08rem;
   margin: 6em 0 1.5em 0;
+}
+.titlepage h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.titlepage h3, .titlepage h4 {
+  font-size: 1.2rem;
+  font-weight: normal;
 }
 
 .titlepage h2, .titlepage h3, .titlepage h4 {
@@ -492,7 +500,7 @@ blockquote:before {
   font-family: 'Arsenal', sans-serif;
   content: "“";
   font-size: 8em;
-  left: -45px;
+  left: -85px;
   top: -10px;
   z-index: 5;
   position: absolute;
@@ -748,8 +756,11 @@ th {
   font-weight: bold;
   color:#fff;
   background-color: rgb(87,148,255); 
+  border-bottom: 2px solid rgb(227,227,227);
 }
-
+tr:nth-child(odd) {
+  background-color: rgb(247,247,247);
+}
 table.tbnostyle tr:first-of-type td {
   font-style: normal!important;
   background-color: transparent !important;
