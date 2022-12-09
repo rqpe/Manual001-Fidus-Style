@@ -482,7 +482,7 @@ blockquote {
   font-size: 0.90rem;
   margin-top: 9.8pt;
   margin-bottom: 9.8pt;
-  margin-left: 60px;
+  margin-left: 80px;
   padding-left: 5px;
   margin-right: 10px;
   font-style: italic;
@@ -853,7 +853,7 @@ h2 + p {
   }
   body.user-contents {
     max-width: 126.5mm;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     max-height: 220mm;
   }
 
