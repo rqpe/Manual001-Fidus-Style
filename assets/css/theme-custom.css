@@ -346,13 +346,13 @@ nav.app-nav li a, nav.app-nav li a:visited {
   transition: text-shadow .3s;
 }
 
-.sidebar-nav a:hover, .sidebar-nav a:active {
+/* .sidebar-nav a:hover, .sidebar-nav a:active {
     text-shadow: 0 0 .50px #33333370, 0 0 .50px #33333370;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     text-decoration: none!important;
-}
+} */
 .sidebar .search input[type="search"]:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
