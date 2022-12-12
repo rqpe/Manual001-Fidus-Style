@@ -168,7 +168,8 @@ color: var(--base-color);
 }
 /*link sources*/
 div.sources a:hover {
-  background-color: rgba(var(--theme-color), 0.5);
+  /* background-color: rgba(var(--theme-color), 0.5); */
+  background-color: rgba(var(--theme-color, 87,148,255), 0.5);
 }
 /*toc from Fidus*/
 .sidebar-nav #toc ol li {
@@ -187,11 +188,12 @@ div.sources a:hover {
 }
  .sidebar-nav #toc ol ol li::before {
   content: '';
-  margin-left: 1em;
+  margin-left: 0em;
 }
-/* .sidebar-nav #toc ol ol li {
-    list-style-type: "- ";
-}  */
+.sidebar-nav #toc ol ol li {
+    /* list-style-type: "- "; */
+    margin-left: 2em;
+} 
 
 #toc ol li ol li ol {
   display: none;
