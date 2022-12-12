@@ -30,8 +30,10 @@
     --heading-h5-font-weight: 500;
     --heading-h6-font-size: 0.9rem; /*var(--font-size-xs)*/
     --sidebar-nav-link-font-weight--active            : bold;
-   /*  --sidebar-border-color                            : var(--theme-color ); *//* rgb(174,182,187); */
+    --sidebar-toggle-background                       : var(--theme-color );
+    /*--sidebar-border-color                          : var(--theme-color ); *//* rgb(174,182,187); */
     --sidebar-nav-link-border-color--active           : var(--theme-color ); 
+    --sidebar-nav-link-border-color--hover            : var(--theme-color );
     --sidebar-nav-link-color--active                  : var(--theme-color ); 
     --sidebar-nav-link-color--hover                   : var(--theme-color );    
     --sidebar-nav-link-font-weight                    : 500;
@@ -169,7 +171,6 @@ color: var(--base-color);
 /*link sources*/
 div.sources a:hover {
   background-color: var(--theme-color);
-  opacity: 0.2;
 }
 /*toc from Fidus*/
 .sidebar-nav #toc ol li {
@@ -192,7 +193,7 @@ div.sources a:hover {
 }
 .sidebar-nav #toc ol ol li {
     /* list-style-type: "- "; */
-    margin-left: 2em;
+    margin-left: 1em;
 } 
 
 #toc ol li ol li ol {
