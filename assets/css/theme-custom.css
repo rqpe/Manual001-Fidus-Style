@@ -171,10 +171,10 @@ color: var(--base-color);
   font-size: 0.8rem;
 }
 .sidebar-nav #toc ol li::before {
-  content: '\f107';
+  content: '\f061';
   font: var(--fa-font-solid);
-  line-height: 2;
-  font-weight: 900;
+  line-height: 1.7;
+  /* font-weight: 700; */
   float: left;
   margin-left: -1.5em;
 }
@@ -194,9 +194,9 @@ color: var(--base-color);
   font-size: 1rem;
 }
 .content .markdown-section .tocpage ol li::before {
-  content: '\f107';
+  content: '\f061';
   font: var(--fa-font-solid);
-  line-height: 1.5;
+  line-height: 1.7;
   float: left;
   margin-left: -1.5em;
 }
