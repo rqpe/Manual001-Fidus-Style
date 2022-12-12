@@ -168,8 +168,8 @@ color: var(--base-color);
 }
 /*link sources*/
 div.sources a:hover {
-  /* background-color: rgba(var(--theme-color), 0.5); */
-  background-color: rgba(var(--theme-color, 87,148,255), 0.5);
+  background-color: var(--theme-color);
+  opacity: 0.2;
 }
 /*toc from Fidus*/
 .sidebar-nav #toc ol li {
