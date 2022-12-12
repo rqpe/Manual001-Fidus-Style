@@ -163,8 +163,8 @@ color: var(--base-color);
   transition:none !important;
 }
 /*link sources*/
-a:hover {
-  background-color{rgba(var(--theme-color), 0.5)}
+div.sources a:hover {
+  background-color : rgba(var(--theme-color), 0.5);
 }
 
 /*toc from Fidus*/
