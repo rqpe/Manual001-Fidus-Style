@@ -162,6 +162,10 @@ color: var(--base-color);
   -o-transition:none !important;
   transition:none !important;
 }
+/*link sources*/
+a:hover {
+  background-color{rgba(var(--theme-color), 0.5)}
+}
 
 /*toc from Fidus*/
 .sidebar-nav #toc ol li {
