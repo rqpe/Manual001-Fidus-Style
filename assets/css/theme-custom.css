@@ -164,7 +164,7 @@ color: var(--base-color);
 }
 /*link sources*/
 div.sources a:hover {
-  background: rgba(var(--theme-color));
+  background-color: var(--theme-color);
 }
 
 /*toc from Fidus*/
@@ -182,13 +182,13 @@ div.sources a:hover {
   float: left;
   margin-left: -1.5em;
 }
-.sidebar-nav #toc ol ol li::before {
+/* .sidebar-nav #toc ol ol li::before {
   content: '';
   margin-left: 0em;
 }
 .sidebar-nav #toc ol ol li {
     list-style-type: "- ";
-}
+} */
 
 #toc ol li ol li ol {
   display: none;
@@ -225,6 +225,21 @@ div.sources a:hover {
 .sidebar nav ul {
   padding-left: 0.8rem;
 }
+.sidebar-nav li.active>a, .sidebar-nav li.collapse>a {
+  border-width: var(--sidebar-nav-link-border-width--active, var(--sidebar-nav-link-border-width));
+  border-style: var(--sidebar-nav-link-border-style--active, var(--sidebar-nav-link-border-style));
+  border-color: var(--sidebar-nav-link-border-color--active, var(--sidebar-nav-link-border-color));
+  background-color: var(--sidebar-nav-link-background-color--active, var(--sidebar-nav-link-background-color));
+  background-image: var(--sidebar-nav-link-background-image--active, var(--sidebar-nav-link-background-image));
+  background-position: var(--sidebar-nav-link-background-position--active, var(--sidebar-nav-link-background-position));
+  background-size: var(--sidebar-nav-link-background-size--active, var(--sidebar-nav-link-background-size));
+  color: var(--sidebar-nav-link-color--active, var(--sidebar-nav-link-color));
+  font-weight: var(--sidebar-nav-link-font-weight--active, var(--sidebar-nav-link-font-weight));
+  -webkit-text-decoration: var(--sidebar-nav-link-text-decoration--active, var(--sidebar-nav-link-text-decoration));
+  text-decoration: var(--sidebar-nav-link-text-decoration--active, var(--sidebar-nav-link-text-decoration));
+  -webkit-text-decoration-color: var(--sidebar-nav-link-text-decoration-color);
+  text-decoration-color: var(--sidebar-nav-link-text-decoration-color);
+  }
 .content .markdown-section table {
   margin: 0 auto;
   width: 99% !important;
