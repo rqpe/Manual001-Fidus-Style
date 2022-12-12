@@ -165,6 +165,7 @@ color: var(--base-color);
 /*link sources*/
 div.sources a:hover {
   background-color: var(--theme-color);
+  opacity: 0.5;
 }
 
 /*toc from Fidus*/
@@ -182,13 +183,13 @@ div.sources a:hover {
   float: left;
   margin-left: -1.5em;
 }
-/* .sidebar-nav #toc ol ol li::before {
+ .sidebar-nav #toc ol ol li::before {
   content: '';
   margin-left: 0em;
 }
-.sidebar-nav #toc ol ol li {
+/* .sidebar-nav #toc ol ol li {
     list-style-type: "- ";
-} */
+}  */
 
 #toc ol li ol li ol {
   display: none;
