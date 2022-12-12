@@ -172,6 +172,9 @@ color: var(--base-color);
   transition:none !important;
 }
 /*link sources*/
+div.sources a {
+  padding: 0 2px;
+}
 div.sources a:hover {
   background-color: var(--theme-color);
   border-radius: 5px;
