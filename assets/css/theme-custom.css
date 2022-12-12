@@ -164,7 +164,7 @@ color: var(--base-color);
 }
 /*link sources*/
 div.sources a:hover {
-  background-color : rgba(var(--theme-color), 0.5);
+  background: rgba(var(--theme-color));
 }
 
 /*toc from Fidus*/
@@ -200,6 +200,7 @@ div.sources a:hover {
 .content .markdown-section .tocpage ol li::before {
   content: '\f061';
   font: var(--fa-font-solid);
+  color: var(--base-color);
   line-height: 1.7;
   float: left;
   margin-left: -1.5em;
@@ -245,7 +246,7 @@ div.sources a:hover {
   font-style: italic;
   font-weight: bold;
   color:#fff;
-  background: linear-gradient(90deg, rgba(87,148,255,1) 0%, rgba(33,75,255,1) 26%);
+  background: linear-gradient(180deg, rgba(87,148,255,1) 0%, rgba(33,75,255,0.8) 90%)
   /*background-color: var(--theme-color);*/
 }
 .content .markdown-section table, .content .markdown-section th, .content .markdown-section td {
@@ -323,13 +324,13 @@ aside.nav > .page_toc .active strong {
 }
 
 /* top right menu*/
-nav.app-nav li a:active, nav.app-nav li a:hover {
+/* nav.app-nav li a:active, nav.app-nav li a:hover {
     color: #EE868F !important;
     -webkit-transition:none !important;
     -moz-transition:none !important;
     -o-transition:none !important;
     transition:none !important;
-}
+} */
 nav.app-nav li a, nav.app-nav li a:visited {
     color: inherit;
 }
