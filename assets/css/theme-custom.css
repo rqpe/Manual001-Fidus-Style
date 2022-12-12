@@ -12,6 +12,7 @@
     --sidebar-name-color                              : #000;
     --sidebar-background                              : #C9D5DE;
     --sidebar-nav-link-color--active                  : var(--theme-color );
+    --sidebar-nav-link-color--hover                   : var(--theme-color );
     --cover-heading-font-size-max                     : 40;
     --cover-heading-font-size-min                     : 34;
     --blockquote-border-color                         : var(--theme-color );
@@ -185,7 +186,7 @@ div.sources a:hover {
 }
  .sidebar-nav #toc ol ol li::before {
   content: '';
-  margin-left: 0em;
+  margin-left: 1em;
 }
 /* .sidebar-nav #toc ol ol li {
     list-style-type: "- ";
@@ -226,7 +227,7 @@ div.sources a:hover {
 .sidebar nav ul {
   padding-left: 0.8rem;
 }
-.sidebar-nav li.active>a, .sidebar-nav li.collapse>a {
+/* .sidebar-nav li.active>a, .sidebar-nav li.collapse>a {
   border-width: var(--sidebar-nav-link-border-width--active, var(--sidebar-nav-link-border-width));
   border-style: var(--sidebar-nav-link-border-style--active, var(--sidebar-nav-link-border-style));
   border-color: var(--sidebar-nav-link-border-color--active, var(--sidebar-nav-link-border-color));
@@ -240,7 +241,7 @@ div.sources a:hover {
   text-decoration: var(--sidebar-nav-link-text-decoration--active, var(--sidebar-nav-link-text-decoration));
   -webkit-text-decoration-color: var(--sidebar-nav-link-text-decoration-color);
   text-decoration-color: var(--sidebar-nav-link-text-decoration-color);
-  }
+  } */
 .content .markdown-section table {
   margin: 0 auto;
   width: 99% !important;
