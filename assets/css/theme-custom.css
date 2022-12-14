@@ -62,7 +62,8 @@
   text-align: center;
 }
 .content .markdown-section h1.booktitle {
-  margin: 0!important;
+  margin-bottom: 0;
+  font-size: var(--heading-h1-font-size);
 }
 .markdown-section h1, .content .markdown-section .article-title {
     margin: var(--heading-h1-margin, var(--heading-margin));
@@ -293,9 +294,9 @@ div.sources a:hover {
     margin: 0.5em 0 0.75em;
     text-align: left;
     font-style: normal;
-    font-weight: 300;
+t    font-weight: 300;
 }
-.content .markdown-section figure {
+.conten .markdown-section figure {
     border: none;
 }
 .content .markdown-section figure.aligned-left.image-width-50 {
