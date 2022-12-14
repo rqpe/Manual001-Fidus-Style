@@ -61,8 +61,9 @@
 .content .markdown-section .booktitle, .content .markdown-section .titlepage {
   text-align: center;
 }
+/*booktitle*/
 .markdown-section h1:first-child {
-  margin-top: 10em;
+  margin-top: 1em;
   margin-bottom: 0;
   font-size: var(--heading-h1-font-size);
 }
