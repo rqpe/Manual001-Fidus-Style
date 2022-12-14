@@ -62,8 +62,8 @@
   text-align: center;
 }
 /*booktitle*/
-.markdown-section h1:first-child {
-  margin-top: 1em;
+.markdown-section h1.booktitle:first-child {
+  margin-top: 1em!important;
   margin-bottom: 0;
   font-size: var(--heading-h1-font-size);
 }
