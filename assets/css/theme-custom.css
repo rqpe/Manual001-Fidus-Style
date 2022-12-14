@@ -62,6 +62,9 @@
 .content .markdown-section .booktitle, .content .markdown-section .titlepage {
   text-align: center;
 }
+.content .markdown-section h1.booktitle {
+  margin: 0;
+}
 .markdown-section h1, .content .markdown-section .article-title {
     margin: var(--heading-h1-margin, var(--heading-margin));
     padding: var(--heading-h1-padding, var(--heading-padding));
