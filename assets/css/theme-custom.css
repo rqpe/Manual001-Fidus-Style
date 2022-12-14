@@ -20,7 +20,7 @@
     --heading-h1-font-size: 3rem;
     --heading-h1-font-weight: 800;
     --heading-h2-font-size: 2rem;/*var(--font-size-xl)*/
-    --heading-h2-border-color: rgba(var(--theme-color), 1);/* 195, 215, 250 */
+    --heading-h2-border-color: rgba(195, 215, 250);/* var(--theme-color), 1  */
     --heading-h3-border-style: solid;
     --heading-h3-font-size: 1.6rem; /*var(--font-size-l)*/
     --heading-h3-font-weight: 500;
@@ -30,7 +30,6 @@
     --heading-h5-font-size: 1.1rem; /*var(--font-size-s)*/
     --heading-h5-font-weight: 500;
     --heading-h6-font-size: 0.9rem; /*var(--font-size-xs)*/
-    --sidebar-nav-link-font-weight--active            : bold;
     --sidebar-toggle-background                       : var(--theme-color );
     --sidebar-border-color                            : rgb(174,182,187);
     --sidebar-nav-link-border-color--active           : var(--theme-color ); 
@@ -63,7 +62,7 @@
   text-align: center;
 }
 .content .markdown-section h1.booktitle {
-  margin: 0;
+  margin: 0!important;
 }
 .markdown-section h1, .content .markdown-section .article-title {
     margin: var(--heading-h1-margin, var(--heading-margin));
@@ -242,7 +241,7 @@ div.sources a:hover {
 .sidebar nav ul {
   padding-left: 0.8rem;
 }
-/* .sidebar-nav li.active>a, .sidebar-nav li.collapse>a {
+ .sidebar-nav li.active>a, .sidebar-nav li.collapse>a {
   border-width: var(--sidebar-nav-link-border-width--active, var(--sidebar-nav-link-border-width));
   border-style: var(--sidebar-nav-link-border-style--active, var(--sidebar-nav-link-border-style));
   border-color: var(--sidebar-nav-link-border-color--active, var(--sidebar-nav-link-border-color));
@@ -256,7 +255,7 @@ div.sources a:hover {
   text-decoration: var(--sidebar-nav-link-text-decoration--active, var(--sidebar-nav-link-text-decoration));
   -webkit-text-decoration-color: var(--sidebar-nav-link-text-decoration-color);
   text-decoration-color: var(--sidebar-nav-link-text-decoration-color);
-  } */
+  }
 .content .markdown-section table {
   margin: 0 auto;
   width: 99% !important;
