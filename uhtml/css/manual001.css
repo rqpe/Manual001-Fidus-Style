@@ -52,6 +52,7 @@
   }
   @bottom-right {
     content: " ";
+    width: 35mm;
   }
 }
 @page :right {
@@ -557,7 +558,7 @@ h1 {
 h1 strong { font-weight: bold;}
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-family: 'Arsenal', sans-serif;
   font-weight: bold;
   text-transform: none;
@@ -566,7 +567,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-family: 'Arsenal', sans-serif;
   page-break-inside: avoid;
   page-break-after: avoid;
@@ -574,7 +575,7 @@ h3 {
 }
 
 h4 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-family: 'Arsenal', sans-serif;
   font-weight: bold;
   page-break-inside: avoid;
@@ -584,7 +585,7 @@ h4 {
 h5 {
   font-family: '0pen sans', sans-serif;
   font-weight: bolder;
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   page-break-inside: avoid;
   page-break-after: avoid;
 }
@@ -858,9 +859,9 @@ h2 + p {
     font-size: 9.96pt;
     line-height: 1.21;
   }
-  h1, .article-title, .article-bibliography-header {
+ /*  h1, .article-title, .article-bibliography-header {
     font-size: 14.04pt;
-  }
+  } */
   body.user-contents {
     max-width: 126.5mm;
     /* margin: 0 auto; */
