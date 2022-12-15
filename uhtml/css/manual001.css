@@ -486,16 +486,18 @@ blockquote {
   width: 80%;
   position: relative;
   font-family: '0pen sans', sans-serif;
-  font-size: 0.90rem;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  margin-left: 70px;
-  padding-left: 5px;
-  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 5px solid rgb(87,148,255);
+  background-color: rgb(247,247,247);
+  padding-left: 30px;
+  padding-right: 20px;
   font-style: italic;
 }
 
-blockquote:before {
+/* blockquote:before {
   font-family: 'Arsenal', sans-serif;
   content: "“";
   font-size: 8em;
@@ -505,7 +507,7 @@ blockquote:before {
   position: absolute;
   color:rgb(87,148,255);  
   opacity: 1;
-}
+} */
 
 blockquote p {
   font-family: inherit;
@@ -557,7 +559,7 @@ h1 {
 h1 strong { font-weight: bold;}
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Arsenal', sans-serif;
   font-weight: normal;
   text-transform: none;
@@ -566,16 +568,16 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-family: 'Arsenal', sans-serif;
   page-break-inside: avoid;
   page-break-after: avoid;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 h4 {
   font-size: 1.2rem;
-  font-family: 'Arsenal', sans-serif;
+  font-family:'0pen sans', sans-serif;
   font-weight: bold;
   page-break-inside: avoid;
   page-break-after: avoid;
