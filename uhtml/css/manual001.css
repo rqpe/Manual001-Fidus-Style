@@ -559,18 +559,18 @@ h1 strong { font-weight: bold;}
 h2 {
   font-size: 2.5rem;
   font-family: 'Arsenal', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: none;
   page-break-inside: avoid;
   page-break-after: avoid;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: 'Arsenal', sans-serif;
   page-break-inside: avoid;
   page-break-after: avoid;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 h4 {
