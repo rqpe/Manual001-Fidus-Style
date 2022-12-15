@@ -490,10 +490,9 @@ blockquote {
   font-weight: 300;
   margin-top: 2em;
   margin-bottom: 2em;
-  border-right: 5px solid rgb(87,148,255);
+  border-left: 5px solid rgb(87,148,255);
   background-color: rgb(247,247,247);
-  padding-left: 30px;
-  padding-right: 20px;
+  padding: 30px 20px;
   font-style: italic;
 }
 
