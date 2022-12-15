@@ -488,8 +488,8 @@ blockquote {
   position: relative;
   font-family: '0pen sans', sans-serif;
   font-size: 0.90rem;
-  margin-top: 9.8pt;
-  margin-bottom: 9.8pt;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   margin-left: 70px;
   padding-left: 5px;
   margin-right: 10px;
@@ -500,7 +500,7 @@ blockquote:before {
   font-family: 'Arsenal', sans-serif;
   content: "“";
   font-size: 8em;
-  left: -85px;
+  left: -70px;
   top: -10px;
   z-index: 5;
   position: absolute;
