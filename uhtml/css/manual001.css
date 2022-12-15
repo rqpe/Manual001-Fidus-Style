@@ -37,7 +37,7 @@
     content: "Page " counter(page) "/" counter(pages);/*Change to Blat*/
     line-height: 1.5;
     font-family: '0pen sans', sans-serif;
-    text-align: right;
+    text-align: left;
     font-weight: normal;
     font-style: italic;
     font-size: 6.96pt;
@@ -48,11 +48,10 @@
   
   @bottom-center {
     content: " ";
-    width: 57mm;
   }
   @bottom-right {
     content: " ";
-    width: 35mm;
+    width: 80mm;
   }
 }
 @page :right {
@@ -214,7 +213,7 @@ html {
 nav::before {
   content: "Table of Contents"; /*Change to  Inhaltsverzeichnis*/
   font-family: 'Arsenal', sans-serif;
-  font-size: 1.17rem;
+  font-size: 3rem;
   color: rgb(87,148,255);  
   font-weight: bold;
   text-align: left;
@@ -855,7 +854,7 @@ h2 + p {
   @page {
     size: 210mm 297mm;
   }
-  nav, p, h2, h3, ul, ol, .csl-entry  {
+  nav, p, ul, ol, .csl-entry  {
     font-size: 9.96pt;
     line-height: 1.21;
   }
