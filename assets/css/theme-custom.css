@@ -78,7 +78,8 @@
     font-size: var(--heading-h1-font-size);
     font-weight: var(--heading-h1-font-weight, var(--heading-font-weight));
     line-height: var(--base-line-height);
-    color: var(--heading-h1-color, var(--heading-color));
+    /* color: var(--heading-h1-color, var(--heading-color)); */
+    color:var(--theme-color);
     text-align: left;
 }
 
