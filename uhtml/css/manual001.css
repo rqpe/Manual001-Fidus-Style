@@ -342,7 +342,7 @@ h1.part { display: none; }
 .article-bibliography-header {
   font-family: 'Arsenal', sans-serif;
   font-size: 1.8rem;
-  color: rgb(87,148,255);  
+  /* color: rgb(87,148,255);  */ 
   font-weight: normal;
   text-align: left;
   margin-top: 1.1em;
