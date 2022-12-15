@@ -713,7 +713,7 @@ ul {
 }
 .article-body ul > li:before {
   content: "-";
-  padding-right: 20px;
+  padding-right: 8px;
   color:rgb(0,0,0);
   font-size: 120%;
 }
