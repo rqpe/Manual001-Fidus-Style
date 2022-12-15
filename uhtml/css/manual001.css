@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=fallback');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @page {
   size: 210mm 297mm;
   margin-top: 30mm;
@@ -34,15 +34,6 @@
     width: 80mm;
   }
   @bottom-left {
-    content: " ";
-    width: 80mm;
-  }
-  
-  @bottom-center {
-    content: " ";
-    width: 57mm;
-  }
-  @bottom-right {
     content: "Page " counter(page) "/" counter(pages);/*Change to Blat*/
     line-height: 1.5;
     font-family: '0pen sans', sans-serif;
@@ -53,6 +44,15 @@
     letter-spacing: 0.2pt;
     word-spacing: 1px;
     width: 35mm;
+  }
+  
+  @bottom-center {
+    content: " ";
+    width: 57mm;
+  }
+  @bottom-right {
+    content: " ";
+    width: 80mm;
   }
 }
 @page :right {
@@ -294,8 +294,8 @@ div.titlepage:after{
 }
 h1.booktitle {
   text-align: left;
-  font-size: 2.08rem;
-  margin: 6em 0 1.5em 0;
+  font-size: 3rem;
+  margin: 6em 0 1em 0;
 }
 .titlepage h2 {
   font-size: 2rem;
@@ -314,7 +314,7 @@ h1.part { display: none; }
 .article-title {
   string-set: chapter-title content(text);
   font-family: 'Arsenal', sans-serif;
-  font-size: 1.17rem;
+  font-size: 3rem;
   color: rgb(87,148,255);  
   font-weight: bold;
   text-align: left;
@@ -342,7 +342,7 @@ h1.part { display: none; }
 /*Literaturverzeichnis*/
 .article-bibliography-header {
   font-family: 'Arsenal', sans-serif;
-  font-size: 1.17rem;
+  font-size: 3rem;
   color: rgb(87,148,255);  
   font-weight: bold;
   text-align: left;
@@ -490,7 +490,7 @@ blockquote {
   font-size: 0.90rem;
   margin-top: 9.8pt;
   margin-bottom: 9.8pt;
-  margin-left: 80px;
+  margin-left: 70px;
   padding-left: 5px;
   margin-right: 10px;
   font-style: italic;
@@ -541,7 +541,7 @@ h6 {
 
 h1 {
   font-family: 'Arsenal', sans-serif;
-  font-size: 1.17rem;
+  font-size: 3rem;
   color: rgb(87,148,255); 
   font-weight: bold;
   margin-top: 1.1em;
@@ -558,7 +558,7 @@ h1 {
 h1 strong { font-weight: bold;}
 
 h2 {
-  font-size: 0.90rem;
+  font-size: 1.8rem;
   font-family: 'Arsenal', sans-serif;
   font-weight: bold;
   text-transform: none;
@@ -567,7 +567,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.90rem;
+  font-size: 1.3rem;
   font-family: 'Arsenal', sans-serif;
   page-break-inside: avoid;
   page-break-after: avoid;
@@ -575,7 +575,7 @@ h3 {
 }
 
 h4 {
-  font-size: 0.83rem;
+  font-size: 0.9rem;
   font-family: 'Arsenal', sans-serif;
   font-weight: bold;
   page-break-inside: avoid;
